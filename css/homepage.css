@@ -1,14 +1,14 @@
 body {
   font-size: 18px;
   font-family: Gill Sans, sans-serif;
-  background-color: #F9DB79;
+  /* background-color: #F9DB79; */
   margin: 0;
 }
 
-h1{
-  font-weight:lighter;
+h1 {
+  /* font-weight:lighter; */
   font-size:80px;
-  color: #fff;
+  color: #333;
   text-align: center;
   padding-top: 10px;
   margin-bottom: 0;
@@ -21,7 +21,7 @@ table {
 }
 
 th {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #ccc;
   padding: 10px;
 }
 
@@ -34,17 +34,36 @@ tr {
   border-bottom: 1px solid #ccc;
 }
 
+tr:last-child {
+  border-bottom: none;
+}
+
 p {
   margin: 5px;
 }
 
-.TopNavBar {
+a {
+  text-decoration: none;
+}
+
+.top-navbar {
   display: flex;
   justify-content: space-between;
-  padding: 10px 20px;
+  padding: 20px 40px;
+  background-color: #F9DB79;
 }
-.TopNavBar-Left {
+
+.top-navbar-left {
   justify-content: flex-start;
+}
+
+.top-navbar a {
+  margin: 0px 5px;
+  color: black;
+}
+
+.top-navbar a:hover {
+  color: white;
 }
 
 .container {
@@ -58,11 +77,13 @@ p {
   width: 80%;
   min-width: 950px;
   margin: 30px;
+  /* padding: 15px; */
   /* border: 1px solid black; */
 }
 
-.sched {
-  background-color: #eee;
+.table-container {
+  border-radius: .5rem;
+  border: 1px solid #ccc;
 }
 
 .flex-end {
@@ -78,7 +99,7 @@ p {
 .box {
   display: flex;
   flex-direction: column;
-  background-color: #eee;
+  /* background-color: #eee; */
   padding: 15px;
   width: 20%;
   min-width: 250px;
@@ -94,10 +115,16 @@ p {
   display: flex;
   justify-content: center;
   border: 1px solid #ccc;
-  border-radius: 2rem;
+  border-radius: 1.5rem;
   background-color: rgb(255,31,90,0.4);
   color: #444;
   margin: 10px;
   padding: 10px 5px;
   border: 1px solid #aaa;
+}
+
+.sched-meals p:hover {
+  cursor: pointer;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
