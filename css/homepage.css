@@ -116,7 +116,8 @@ a {
   justify-content: center;
   border: 1px solid #ccc;
   border-radius: 1.5rem;
-  background-color: rgb(255,31,90,0.4);
+  /* background-color: rgb(255,31,90,0.4); */
+  background-color: rgb(255, 143, 86, 0.5);
   color: #444;
   margin: 10px;
   padding: 10px 5px;
